@@ -3,7 +3,7 @@
 {% block title %} sign-up {% endblock %} 
 
 {%block content %} 
-<from method="POST">
+<form method="POST">
     <h3 align="center">Sign Up</h3>
     <div class="form-group">
         <label for="email">Email Address</label>
@@ -22,7 +22,7 @@
             type="text" 
             class="form-control" 
             id="firstName" 
-            name="FirstName" 
+            name="firstName" 
             placeholder="Enter first name"
         />
     </div>
@@ -30,7 +30,7 @@
     <div class="form-group">
         <label for="password1">Password</label>
         <input 
-            type="passwrod" 
+            type="password" 
             class="form-control" 
             id="password1" 
             name="password1" 
@@ -41,7 +41,7 @@
     <div class="form-group">
         <label for="password2">Confirm Password</label>
         <input 
-            type="passwrod" 
+            type="password" 
             class="form-control" 
             id="password1" 
             name="password2" 
@@ -51,6 +51,6 @@
     <br />
 
     <button type="submit" class="btn btn-primary">Submit</button>
-</from>
+</form>
 
 {% endblock %}
